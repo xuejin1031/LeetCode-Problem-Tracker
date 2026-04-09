@@ -94,9 +94,15 @@ npm install
 
 ## 啟動方式
 
-### 方式一：一鍵啟動前後端
+### 方式一：一鍵啟動前後端（Windows PowerShell）
 
-在根目錄執行：
+在根目錄執行 PowerShell 腳本：
+
+```powershell
+.\start-dev.ps1
+```
+
+或執行 npm 指令（需已設定 npm scripts）：
 
 ```bash
 npm run dev
@@ -104,11 +110,11 @@ npm run dev
 
 這個指令會：
 
-- 開兩個 PowerShell 視窗
-- 分別執行 `backend` 與 `frontend` 的開發伺服器
-- 等待前端就緒後自動開啟 `http://localhost:5173/zh/list`
+- 同時啟動後端服務（`http://localhost:3001`）
+- 同時啟動前端開發伺服器（`http://localhost:5173`）
+- 自動開啟瀏覽器到 `http://localhost:5173/zh/list`
 
-### 方式二：手動分開啟動
+### 方式二：手動分開啟動（跨平台）
 
 後端：
 
