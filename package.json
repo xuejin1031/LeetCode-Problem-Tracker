@@ -1,0 +1,7 @@
+{
+  "name": "leetcode-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "powershell -ExecutionPolicy Bypass -File ./start-dev.ps1"
+  }
+}
